@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="18 02 2010"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvOpen"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:textColor="@color/black"
+        android:text="@string/open_on"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvOpenValue"
+        android:layout_marginLeft="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/tvOpen"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvClose"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOpen"
+        android:textColor="@color/black"
+        android:text="Close: "
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvCloseValue"
+        android:layout_marginLeft="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvOpen"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/tvClose"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvClose"
+        android:layout_marginTop="12dp"
+        android:background="@color/gray" />
+
+</RelativeLayout>
